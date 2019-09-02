@@ -1,0 +1,9 @@
+.idea
+.scannerwork
+.editorconfig
+
+.docker/nginx/Logs/
+.docker/postgres/var/
+.docker/nginx/Logs/
+
+src/report/

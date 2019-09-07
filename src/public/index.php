@@ -20,7 +20,7 @@ include_once 'includes/header.php';
           $sql = "SELECT * FROM clients";
           $result = pg_query($connect, $sql);
 
-          function calculateAge($date) {
+          function calculate_age($date) {
             list($year, $month, $day) = explode('-', $date);
 
             $today = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
@@ -39,7 +39,7 @@ include_once 'includes/header.php';
           <td><?php echo $data['name']; ?></td>
           <td><?php echo $data['last_name']; ?></td>
           <td><?php echo $data['email']; ?></td>
-          <td><?php echo calculateAge($data['birth_date']); ?></td>
+          <td><?php echo calculate_age($data['birth_date']); ?></td>
           <td><a href="edit_client.php?id=<?php echo $data['id']; ?>" class="btn-floating waves-effect orange"><i class="material-icons">edit</i></a></td>
           <td><a href="#modal<?php echo $data['id']; ?>" class="btn-floating waves-effect red modal-trigger"><i class="material-icons">delete</i></a></td>
         

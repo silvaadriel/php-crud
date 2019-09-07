@@ -25,7 +25,7 @@ include_once 'includes/header.php';
 
             $today = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
 
-            $birth = mktime( 0, 0, 0, $mes, $dia, $ano);
+            $birth = mktime( 0, 0, 0, $month, $day, $year);
 
             $age = floor((((($today - $birth) / 60) / 60) / 24) / 365.25);
 

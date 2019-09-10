@@ -1,5 +1,6 @@
 <?php
 include_once 'php_actions/db_connection.php';
+include_once 'utils/calculate_age.php';
 include_once 'includes/message.php';
 include_once 'includes/header.php';
 ?>
@@ -19,18 +20,6 @@ include_once 'includes/header.php';
         <?php 
           $sql = "SELECT * FROM clients";
           $result = pg_query($connect, $sql);
-
-          function calculate_age($date) {
-            list($year, $month, $day) = explode('-', $date);
-
-            $today = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
-
-            $birth = mktime( 0, 0, 0, $month, $day, $year);
-
-            $age = floor((((($today - $birth) / 60) / 60) / 24) / 365.25);
-
-            return $age;
-          }
 
           if (pg_num_rows($result) > 0):
             while ($data = pg_fetch_array($result)):

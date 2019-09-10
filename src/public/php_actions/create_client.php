@@ -1,13 +1,7 @@
 <?php
 session_start();
 require_once 'db_connection.php';
-
-function clear_input($input) {
-  $clean_input = pg_escape_string($input);
-  $clean_input = htmlspecialchars($clean_input);
-
-  return $clean_input;
-}
+require_once '../utils/clear_input.php';
 
 $name = clear_input($_POST['name']);
 $last_name = clear_input($_POST['last_name']);

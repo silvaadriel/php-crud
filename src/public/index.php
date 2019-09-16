@@ -9,12 +9,7 @@ include_once 'includes/header.php';
     <h3 class="light">Clients</h3>
     <table class="striped">
       <thead>
-        <tr>
-          <th>Name:</th>
-          <th>Last Name:</th>
-          <th>Email:</th>
-          <th>Age:</th>
-        </tr>
+        <tr><th>Name:</th><th>Last Name:</th><th>Email:</th><th>Age:</th></tr>
       </thead>
       <tbody>
         <?php 

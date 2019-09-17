@@ -26,8 +26,7 @@ include_once 'includes/header.php';
           <td><?php echo calculate_age($data['birth_date']); ?></td>
           <td><a href="edit_client.php?id=<?php echo $data['id']; ?>" class="btn-floating waves-effect orange"><i class="material-icons">edit</i></a></td>
           <td><a href="#modal<?php echo $data['id']; ?>" class="btn-floating waves-effect red modal-trigger"><i class="material-icons">delete</i></a></td>
-        
-          <!-- Modal Structure -->
+
           <div id="modal<?php echo $data['id']; ?>" class="modal">
             <div class="modal-content">
               <h4>Warning!</h4>

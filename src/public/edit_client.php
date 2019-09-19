@@ -33,8 +33,8 @@ $data = pg_fetch_array($result);
         <label for="birth_date">Birth Date</label>
       </div>
 
-      <button class="btn" type="submit">Save</button>
-      <a class="btn green" href="index.php" >Clients List</a>
+      <button class="btn waves-effect" type="submit">Save</button>
+      <a class="btn green waves-effect" href="index.php" >Clients List</a>
     </form>
   </div>
 </div>

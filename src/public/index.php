@@ -57,7 +57,9 @@ include_once 'includes/header.php';
         ?>
       </tbody>
     </table>
-    <a href="./add_client.php" class="btn waves-effect">Add client</a>
+    <div class="row right">
+      <a href="./add_client.php" class="btn waves-effect">Add client</a>
+    </div>
   </div>
 </div>
 <?php include_once 'includes/footer.php' ?>
